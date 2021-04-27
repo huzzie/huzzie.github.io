@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Credit Card Churn</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="inner">
+    <header id="header">
+        <div class="logo">
+          <a href="index.html">Credit Card Churn</a>
+        </div>
+      </header>
+
+      <!-- Tables -->
+        <div class="containerfluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sectionheading">
+                <h1>Confusion Matrix</h1>
+              </div>
+              <div class="defaulttable">
+                <h2>KNN</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>0</th>
+                      <th>1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>0</th>
+                      <td>335</td>
+                      <td>84</td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>317</td>
+                      <td>1796</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h2>Decision Tree</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>0</th>
+                      <th>1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>0</th>
+                      <td>352</td>
+                      <td>67</td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>122</td>
+                      <td>1991</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h2>Random Forest</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>0</th>
+                      <th>1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>0</th>
+                      <td>372</td>
+                      <td>47</td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>66</td>
+                      <td>2047</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <section></section>
+              <h1>Result</h1>
+              <div class="alternatetable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Accuracy</th>
+                      <th>Precision</th>
+                      <th>F1-Score</th>
+                      <th>Recall Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>KNN</td>
+                      <td>0.84</td>
+                      <td>0.73</td>
+                      <td>0.82</td>
+                      <td>0.76</td>
+                    </tr>
+                    <tr>
+                      <td>Decision Tree</td>
+                      <td>0.93</td>
+                      <td>0.86</td>
+                      <td>0.89</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>Random Forest</td>
+                      <td>0.96</td>
+                      <td>0.91</td>
+                      <td>0.93</td>
+                      <td>0.92</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section></section>
+
+
+        <h1>Conclusion</h1>
+        <p>
+          The dataset was imbalanced and SMOTE method was used for balanding the data.
+          Surprisingly, there was no significant relationship between variables to distinguish the patterns between attrited customers and churned customers.
+          KNN, Random Forest, Decision Tree were used to predict the churned customers, and it seemed Random Forest model was the best model, which scored ROC-AUC value 0.98.
+          With these model, we could find that total transation count and total transaction amount variables are the significant variable in the model. 
+          Therefore, finance industry needs to make plans or deals for transation amount/count to prevent customer churns. 
+        </p>
+        <section></section>
+        <h1>Future Study</h1>
+        <p>
+          There are uncountable number of trials and errors to build this webpage, but I've learned a lot. 
+          However, I was not able to build some visualization plots that I wanted due to my lack of experience on Javascript and data.
+          Even though I've learned chart race in the class, which was very intriguing, but my data was not a series of data points that indexed in time orderr.
+          In the future, I would like to build a chart race by using the time series data. Thank you. 
+        </p>
+        <section></section>
+        <h1>Useful Resources</h1>
+        <p>
+        Plot Visualization Help: <a href = 'https://www.d3-graph-gallery.com/index.html'>D3.js Graph Gallery</a>
+        <br>
+        Webpage Template Help: <a href = 'https://www.facebook.com/templatemo'>Template</a>
+        </p>
+      </section>
+    </section>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+
+        <div class="inner">
+            
+          <!-- Menu -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="visuals.html">About Data</a></li>
+              <li><a href="analysis.html">Analysis</a></li>
+              <li><a href="summary.html">Summary</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+  </div>
+
+
+<!-- External JS libraries -->
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/d3.v4.js"></script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

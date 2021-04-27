@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Credit Card Churn</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="inner">
+    <header id="header">
+        <div class="logo">
+          <a href="index.html">Credit Card Churn</a>
+        </div>
+      </header>
+
+      <div class="container">
+        <h1>Correlation Plot</h1>
+            <div id="my_dataviz"></div>
+        <section></section>
+
+        <h1>ROC AUC Curve</h1>
+            <select id = 'selectButton8'></select>
+            <div id="my_dataviz2"></div>
+            <p>
+              Decision Tree ROC-AUC Score: 0.8973
+              <br>
+              Random Forest ROC-AUC Score: 0.9876
+              <br>
+              KNN ROC-AUC Score: 0.8896 
+            </p>
+        <section></section>
+
+        <h1>Feature Importance</h1>
+          <div id ='chart_FI3'></div>
+          <p>
+            KNN : Credit_Limit: 0.1707, Avg_Open_To_Buy : 0.1646, Total_Trans_Amt: 0.1613
+            <br>
+            Decision Tree: Total_Trans_Ct: 0.4603, Totol_Trans_Amt: 0.1817
+            <br>
+            Random Forest: Total_Trans_Ct: 0.2191, Total_Trans_Amt: 0.2158
+          </p>
+          <section></section>
+      </div><!--container1-->
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Menu -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="visuals.html">About Data</a></li>
+              <li><a href="analysis.html">Analysis</a></li>
+              <li><a href="summary.html">Summary</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </div>
+
+
+
+<!-- External JS libraries -->
+
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/analysis.js"></script>
+
+    <script src="js/d3-geo-projection.v2.min.js"></script>
+    <script src="js/d3.v4.js"></script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

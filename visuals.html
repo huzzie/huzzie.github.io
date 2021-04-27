@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Credit Card Churn</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="inner">
+    <header id="header">
+        <div class="logo">
+          <a href="index.html">Credit Card Churn</a>
+        </div>
+      </header>
+
+    <div class="container">
+
+        <h1>Customer Information - Discrete Variable</h1>
+            <button onclick="update(data1)">Churn Customer</button>
+            <button onclick="update(data3)">Dependent Count</button>
+            <button onclick="update(data4)">Education Level</button>
+            <button onclick="update(data5)">Marital Status</button>
+            <button onclick="update(data6)">Card Category</button>
+            <div id="chart-area5"></div>
+        <section></section>
+        <h1>Customer Information - Continuous Variable</h1>
+            <select id = 'selectButton2'></select>
+            <div id='chart-area6'></div>
+            <section></section>
+          <h1>Data Source</h1>
+            <p>Data available at 
+            <a href = 'https://www.kaggle.com/sakshigoyal7/credit-card-customers'>Kaggle</a><div class="primary-button">
+            </p>
+        
+    </div><!--Customer Information-->
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+
+        <div class="inner">
+          <!-- Menu -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="visuals.html">About Data</a></li>
+              <li><a href="analysis.html">Analysis</a></li>
+              <li><a href="summary.html">Summary</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </div>
+
+
+<!-- External JS libraries -->
+
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/visuals.js"></script>
+    <script src="js/d3-geo-projection.v2.min.js"></script>
+    <script src="js/d3.v4.js"></script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
