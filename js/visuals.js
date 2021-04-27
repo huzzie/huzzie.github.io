@@ -90,12 +90,6 @@ function update(data){
     // Create u variable
     var u = svg4.selectAll('rect')
         .data(data)
-        .enter()
-        .append('text')
-        .attr('class', 'label')
-        .attr('y', function(d) { return y(d.group) + y.rangeBand() / 2 + 4; })
-        .attr('x', function(d) {return x(d.value) + 3 })
-        .text(function(d) { return d.value})
 
     u 
         .enter()
