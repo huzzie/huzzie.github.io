@@ -1,0 +1,13 @@
+, type, variable1, variable2, value
+0, Logistic, v1, v3, 269
+1, Logistic, v2, v3, 132
+2, Logistic, v1, v4, 259
+3, Logistic, v2, v4, 1872
+4, Decision Tree, v1, v3, 332
+5, Decision Tree, v2, v3, 69
+6, Decision Tree, v1, v4, 124
+7, Decision Tree, v2, v4, 2007
+8, Random Forest, v1, v3, 361
+9, Random Forest, v2, v3, 40
+10, Random Forest, v1, v4, 62
+11, Random Forest, v2, v4, 2069

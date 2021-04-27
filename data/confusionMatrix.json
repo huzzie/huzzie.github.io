@@ -1,0 +1,18 @@
+[
+    {"type": "Logistic", "x": 0, "y": 0, "value": 269},
+    {"type": "Logistic", "x": 0, "y": 1, "value": 132},
+    {"type": "Logistic", "x": 1, "y": 0, "value": 259},
+    {"type": "Logistic", "x": 1, "y": 1, "value": 1872},
+
+    {"type": "Desicion Tree", "x": 0, "y": 0, "value": 332},
+    {"type": "Desicion Tree", "x": 0, "y": 1, "value": 69},
+    {"type": "Desicion Tree", "x": 1, "y": 0, "value": 124},
+    {"type": "Desicion Tree", "x": 1, "y": 1, "value": 2007},
+
+    {"type": "Random Forest", "x": 0, "y": 0, "value": 361},
+    {"type": "Random Forest", "x": 0, "y": 1, "value": 40},
+    {"type": "Random Forest", "x": 1, "y": 0, "value": 62},
+    {"type": "Random Forest", "x": 1, "y": 1, "value": 2069}
+
+
+]

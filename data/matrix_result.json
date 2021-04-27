@@ -1,0 +1,6 @@
+[
+    {"type": "Logistic", "tp": 269, "tn" : 132, "fp": 259, "fn": 1872 , "Recall": 0.67, "F1": 0.57, "Precision": 0.67, "Accuracy": 0.84},
+    {"type": "Decision Tree", "tp": 332, "tn": 69, "fp": 124, "fn": 2007, "Recall": 0.82, "F1": 0.77, "Precision": 0.82, "Accuracy": 0.92},
+    {"type": "Random Forest", "tp": 361, "tn": 40, "fp": 62, "fn": 2069, "Recall": 0.9, "F1": 0.88, "Precision": 0.85, "Accuracy": 0.96}
+
+]
