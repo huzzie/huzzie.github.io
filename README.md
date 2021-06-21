@@ -2,6 +2,9 @@
 
 ## Credit Card Customer Churn Data Visualization
 
+### Website
+[https://huzzie.github.io/]
+
 ### Introduction
 Nowadays, the credit card has become a primary way customer pay for purchases, and financial transactions have taken placed with digital formats. Since the finance industry issues the cards to make more profits with interest rates, customer churn analysis is one of the most important and challenging tasks to them. In this project, customer’s attributes are visualized not only to find the pattern of credit card holder’s churn but also to suggest ways to improve customer retention rates.
 
